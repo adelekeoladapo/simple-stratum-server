@@ -9,10 +9,10 @@ func (mining *Mining) Authorize(args *dto.AuthorizeRequest, result *bool) (e err
 	return
 }
 
-func (mining *Mining) Subscribe() (e error) {
+func (mining *Mining) Subscribe(args *string, result *dto.SubscribeResponse) (e error) {
 	return
 }
 
-func (mining *Mining) Notify() (e error) {
+func (mining *Mining) Notify(args *dto.NotifyRequest, result *string) (e error) {
 	return
 }

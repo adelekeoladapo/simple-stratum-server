@@ -17,11 +17,12 @@ func main() {
 		log.Fatalf("Could not register service, %s", err)
 	}
 
-	rpcServer.HandleHTTP("/", "")
-	listener, err := net.Listen("tcp", "3000")
+	rpcServer.HandleHTTP("/", "/debug")
+	listener, err := net.Listen("tcp", ":3000")
 	if err != nil {
 		log.Fatal("Could not listen on port 3000")
 	}
+	log.Println("Started RPC Handler on localhost:3000")
 
 	for {
 		connection, err := listener.Accept()
