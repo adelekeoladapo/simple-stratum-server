@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/joho/godotenv"
 	"log"
 	"luxot.tech/stratum/controller"
 	"net"
@@ -9,6 +10,10 @@ import (
 )
 
 func main() {
+	/* Load configuration */
+	if err := godotenv.Load(); err != nil {
+		log.Fatalf("Could not load app configuration. %s", err)
+	}
 
 	rpcServer := rpc.NewServer()
 	mining := new(controller.Mining)

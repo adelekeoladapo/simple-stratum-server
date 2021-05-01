@@ -2,4 +2,7 @@ module luxot.tech/stratum
 
 go 1.14
 
-require github.com/jinzhu/gorm v1.9.16
+require (
+	github.com/jinzhu/gorm v1.9.16
+	github.com/joho/godotenv v1.3.0 // indirect
+)
