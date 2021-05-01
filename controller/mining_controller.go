@@ -3,9 +3,10 @@ package controller
 import (
 	"luxot.tech/stratum/dto"
 	"luxot.tech/stratum/service"
+	"luxot.tech/stratum/service/impl"
 )
 
-var miningService service.MiningService
+var miningService service.MiningService = impl.MiningServiceImpl{}
 
 type Mining int
 

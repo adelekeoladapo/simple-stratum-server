@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a583c0a-cdff-4694-b9b3-c4df8f983f7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/repository/authorization_request_repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/impl/subscription_repository_impl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/impl/mining_service_impl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
