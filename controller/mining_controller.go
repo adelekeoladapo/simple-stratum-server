@@ -1,8 +1,11 @@
 package controller
 
+import "luxot.tech/stratum/dto"
+
 type Mining int
 
-func (mining *Mining) Authorize() (e error) {
+func (mining *Mining) Authorize(args *dto.AuthorizeRequest, result *bool) (e error) {
+	*result = true
 	return
 }
 
