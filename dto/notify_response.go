@@ -1,6 +1,6 @@
 package dto
 
-type NotifyRequest struct {
+type NotifyResponse struct {
 	JobId 			string
 	PreviousHash 		string
 	CoinB1 				string
