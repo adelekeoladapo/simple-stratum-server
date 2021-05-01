@@ -4,9 +4,11 @@ import (
 	"github.com/joho/godotenv"
 	"log"
 	"luxot.tech/stratum/controller"
+	"luxot.tech/stratum/db"
 	"net"
 	"net/rpc"
 	"net/rpc/jsonrpc"
+	"os"
 )
 
 func main() {
@@ -14,6 +16,10 @@ func main() {
 	if err := godotenv.Load(); err != nil {
 		log.Fatalf("Could not load app configuration. %s", err)
 	}
+
+	/* Database connection */
+	db.InitPostgresDB(os.Getenv("DB_USER"), os.Getenv("DB_PASSWORD"), os.Getenv("DB_NAME"), os.Getenv("DB_HOST"), os.Getenv("DB_PORT"))
+	defer db.Db.Close()
 
 	rpcServer := rpc.NewServer()
 	mining := new(controller.Mining)

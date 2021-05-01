@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a583c0a-cdff-4694-b9b3-c4df8f983f7d" name="Default Changelist" comment="" />
+    <list default="true" id="0a583c0a-cdff-4694-b9b3-c4df8f983f7d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/server.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,5 +50,11 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2320" y="108" width="1110" height="1045" key="CommitChangelistDialog2" timestamp="1619873220016">
+      <screen x="1920" y="87" width="1920" height="1080" />
+    </state>
+    <state x="2320" y="108" width="1110" height="1045" key="CommitChangelistDialog2/72.27.1848.1053/1920.87.1920.1080@1920.87.1920.1080" timestamp="1619873220016" />
   </component>
 </project>
